@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family:"Finlandica", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url("background.jpg");
+        color: white;
+    }
+
+    .left {
+       
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        margin-bottom: 20px;
+
+    }
+    .left img{
+        width: 135px;
+    }
+    .left div{
+        line-height: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .center {
+        
+        display: block;
+        width: 55%;
+        margin: 30px auto;
+
+    }
+  .navbar li{
+    display: inline-block;
+    font-size: 25px;
+  }
+  
+  .navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 35px 25px;
+  }
+
+  .navbar li a:hover, .navbar li a.active{
+    text-decoration:underline;
+    color: rgb(88,88,88);
+  }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 45px;
+    }
+    .btn{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0px 10px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        padding: 5px 15px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+ 
+    .btn:hover{
+        background-color: red;
+        color: black;
+    }
+
+    .container{
+        border: 1px solid rgb(245, 6, 6);
+        margin:155px 80px;
+        padding: 75px;
+        width: 35%;
+        border-radius: 20px;
+    }
+
+    .fgroup input{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 2px;
+        border: 2px solid;
+        margin: 10px auto;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    .container button{
+        display: block;
+        width: 25%;
+        margin: 20px auto;
+    }
+
+    .footer{
+        text-align: center;
+        color: gray;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="gymlogo.png" alt="">
+            <div>
+               ABC Gym
+            </div>
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li> 
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Fitness Package</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Sign In</button>
+            <button class="btn">Call</button>
+        </div>
+    </header>
+ 
+    <div class="container">
+        <h1>Join Now!!!</h1>
+        <form action="abc.php">
+              <div class="fgroup">
+                <input type="text" name="" placeholder="Name"/>
+              </div>
+              <div class="fgroup">
+                <input type="text" name="" placeholder="Gender"/>
+              </div>
+              <div class="fgroup">
+                <input type="text" name="" placeholder="Age"/>
+              </div>
+              <div class="fgroup">
+                <input type="email" name="" placeholder="Email ID"/>
+              </div>
+              <div class="fgroup">
+                <input type="text" name="" placeholder="Contact Number"/>
+              </div>
+              <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            © Copyright: This website belongs to the ABC Gym
+        </div>
+    </footer>
+
+</body>
+
+</html>
